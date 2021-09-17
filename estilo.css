@@ -1,0 +1,50 @@
+body{
+	background-color: rgba(176, 244, 253, 0.884);
+}
+
+h1{
+	text-align: center;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.carrossel{
+	width: 284px;
+	height: 378px;
+	/*outline: 5px solid red  ;*/
+	overflow: hidden;
+	margin: 50px auto;
+	box-shadow: 10px 10px 30px rgba(244, 36, 252, 0.884);
+}
+
+.carrossel ul {
+	list-style: none;
+	width: 1600px;
+	height: 300px;
+	display: flex;
+}
+
+.carrossel li {
+	position: relative;
+	animation: deslize 20s infinite ease-out;
+}
+
+@keyframes deslize {
+	0% { left: 0; }
+		20% { left: 0; }
+	25% { left: -284px; }
+		45% { left: -284px; }
+	50% { left: -568px; }
+		70% { left: -568px; }
+	75% { left: -852px; }
+		95% { left: -852px; }
+	100% { left: 0px; }
+}
+
+footer{
+	text-align: center;
+	background-color: rgba(158, 239, 245, 0.884);
+}
